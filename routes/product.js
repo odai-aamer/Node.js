@@ -8,7 +8,7 @@ const router = express.Router();
 router.get('/products', productController.getProducts);
 
 // GET /creative-products
-router.get('/creative-products', productController.getProducts);
+router.get('/creative-products', productController.getCreativeProducts);
 
 
 // POST /product

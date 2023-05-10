@@ -11,7 +11,7 @@ exports.getProducts = (req, res, next) => {
 });
 };
 
-exports.getProducts = (req, res, next) => {
+exports.getCreativeProducts = (req, res, next) => {
   
   CreativeProducts.fetchAll(products => {
     console.log(products);

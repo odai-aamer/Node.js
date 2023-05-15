@@ -6,7 +6,6 @@ exports.getProducts = (req, res, next) => {
   Product.fetchAll(products => {
     console.log(products);
     res.status(200).json({
-      products,
       products
     });
 });
@@ -17,7 +16,6 @@ exports.getCreativeProducts = (req, res, next) => {
   CreativeProducts.fetchAll(products => {
     console.log(products);
     res.status(200).json({
-      products,
       products
     });
 });

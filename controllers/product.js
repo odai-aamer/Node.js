@@ -6,6 +6,7 @@ exports.getProducts = (req, res, next) => {
   Product.fetchAll(products => {
     console.log(products);
     res.status(200).json({
+      products,
       products
     });
 });

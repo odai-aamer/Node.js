@@ -4,6 +4,10 @@ const productController = require('../controllers/product');
 
 const router = express.Router();
 
+router.get('/', (req, res, next) => {
+  res.status(200).json({message : 'message'});
+});
+
 // GET /products
 router.get('/products', productController.getProducts);
 
